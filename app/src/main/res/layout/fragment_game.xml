@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.game.GameFragment">
+    tools:context="com.babbel.fallingwords.ui.game.GameFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/score_view"
@@ -57,14 +57,14 @@
         android:id="@+id/layout_restart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_large"
         android:animateLayoutChanges="true"
         android:gravity="center"
         android:orientation="vertical"
         android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/word">
+        fancy:layout_constraintBottom_toBottomOf="parent"
+        fancy:layout_constraintEnd_toEndOf="parent"
+        fancy:layout_constraintStart_toStartOf="parent"
+        fancy:layout_constraintTop_toTopOf="parent">
 
 
         <TextView
@@ -76,16 +76,17 @@
 
         </TextView>
 
-        <Button
+        <mehdi.sakout.fancybuttons.FancyButton
             android:id="@+id/btn_restart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
             android:padding="@dimen/spacing_small"
-            android:text="@string/text_restart"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_radius="15dp"
+            fancy:fb_text="@string/text_restart"
             android:textColor="@android:color/white">
 
-        </Button>
+        </mehdi.sakout.fancybuttons.FancyButton>
     </LinearLayout>
 
 
