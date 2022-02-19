@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FallingWords</string>
+    <string name="start">Start Game</string>
+    <string name="text_words">Words %1$s</string>
+    <string name="text_score">Score %1$s</string>
+    <string name="text_game_over">Game Over</string>
+    <string name="text_restart">Restart</string>
+    <string name="text_wrong_answer">WRONG</string>
+    <string name="text_correct_answer">CORRECT</string>
+</resources>
